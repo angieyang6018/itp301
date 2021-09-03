@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+  <title> Angie Yang | Student Page </title>
+  <meta charset="utf-8" />
+</head>
+
+<body>
+  <div class="box">
+    <div id="body">
+      <h1> Angie Yang</h1>
+      <h2> <a href="angieyan@usc.edu">angieyan@usc.edu</a> </h2>
+      <div id="button">
+        <button id="color">Favorite Color!</button>
+      </div>
+
+      <div class="flexbox">
+        <div id="Assignments">
+          <h3>Assignments</h3>
+            <ul>
+            <li><a href="assignment_01/assignment_01.html">Assignment #1: JS Photo Gallery </a></li>
+            </ul>
+        </div>
+
+        <div id="Labs">
+          <h3>Labs</h3>
+          <ul>
+            <li><a href="student_page.html">Lab #1: Student Page </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelector('#color').onclick = function () {
+      document.querySelector('body').style.backgroundColor = "#ebe8ff";
+    }
+  </script>
+
+  <footer>
+    Fall 2021
+  </footer>
+
+
+</body>
+
+</html>

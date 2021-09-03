@@ -1,0 +1,54 @@
+body
+{
+  text-align: center;
+  font-family: 'Ariel', sans-serif;
+  transition: 0.6s ease;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff5ed;
+}
+
+#title
+{
+  text-align: left;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 27px;
+  color: #fa903e;
+}
+
+#about
+{
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  font-size: 18px;
+}
+
+#pictures
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
+#pictures img
+{
+    width: 100px;
+    height: 100px;
+}
+
+#big-image
+{
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+#big-image img
+{
+    width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}

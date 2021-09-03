@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <link rel="stylesheet" href="mystyle.css">
+      <title> Angie Yang | Photo Gallery </title>
+      <meta charset="utf-8" />
+    </head>
+
+    <body>
+        <div id="title">
+          <h1>Louie the Loaf's Photo Gallery✨</h1>
+        </div>
+
+        <div id="about">
+          <p>Louie is my corgi🐶. He is currently two years old and lives in sunny California☀️ with his family. Louie likes to play fetch🎾, take naps💤, and eat treats🦴!</p>
+        </div>
+
+        <div id="pictures">
+          <img id="pic_01" src="pic_01.jpg" alt="Louie chilling">
+          <img id="pic_02" src="pic_02.jpg" alt="Louie smiling">
+          <img id="pic_03" src="pic_03.jpg" alt="Louie flower">
+          <img id="pic_04" src="pic_04.jpg" alt="Louie on a walk">
+          <img id="pic_05" src="pic_05.jpg" alt="Louie at the beach">
+        </div> <!-- #pictures -->
+
+        <div id="big-image">
+          <img id="main-image" src="pic_01.jpg" alt="the big picture">
+        </div> <!-- #big-image -->
+
+        <script>
+          document.querySelector('#pic_01').onclick=function ()
+          {
+            document.querySelector('#main-image').src = "pic_01.jpg";
+            document.querySelector('#main-image').alt = "Louie chilling";
+          }
+
+          document.querySelector('#pic_02').onclick=function ()
+          {
+            document.querySelector('#main-image').src = "pic_02.jpg";
+            document.querySelector('#main-image').alt = "Louie smiling";
+          }
+
+          document.querySelector('#pic_03').onclick=function ()
+          {
+            document.querySelector('#main-image').src = "pic_03.jpg";
+            document.querySelector('#main-image').alt = "Louie flower";
+          }
+
+          document.querySelector('#pic_04').onclick=function ()
+          {
+            document.querySelector('#main-image').src = "pic_04.jpg";
+            document.querySelector('#main-image').alt = "Louie on a walk";
+          }
+
+          document.querySelector('#pic_05').onclick=function ()
+          {
+            document.querySelector('#main-image').src = "pic_05.jpg";
+            document.querySelector('#main-image').alt = "Louie at the beach";
+          }
+        </script>
+
+        <footer>
+          I hope you enjoyed Louie's pictures! If you want to see more, please check out his Instagram:p <a href="https://www.instagram.com/louievtheloaf/">@louievtheloaf</a> 💕
+        </footer>
+
+
+    </body>
+    
+</html>
