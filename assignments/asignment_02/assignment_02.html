@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+      <title> Assignment 2 | Shopping Cart </title>
+      <meta charset="utf-8"/>
+      <link rel="stylesheet" href="mystyle.css">
+    </head>
+
+    <body>
+        <div id="title">
+          <h1> 🏮Angie's Photo Print Shop🏮 </h1>
+        </div>
+
+        <div id="about">
+          <p>Below is a collection of photos I took at the Palace Museum in Beijing, China. Feel free to click on any of them if you want to purchase it as a print! </p>
+        </div>
+
+        <div id="prints">
+            <div id="print01" class="print_square">
+                <img class="print" src="palace01.jpg" alt="plaza">
+                <p>Front Door Plaza</p>
+                <p class="price">$<span id="price01">15</span></p>
+            </div>
+            <div id="print02" class="print_palace_01">
+                <img class="print" src="palace02.jpg" alt="plaza">
+                <p>Palace 1/2</p>
+                <p class="price">$<span id="price02">10</span></p>
+            </div>
+            <div id="print03" class="print_palace_02">
+                <img class="print" src="palace03.jpg" alt="plaza">
+                <p>Palace 2/2</p>
+                <p class="price">$<span id="price03">20</span></p>
+            </div>
+            <div id="print04" class="print_mountains">
+                <img class="print" src="palace04.jpg" alt="plaza">
+                <p>Mountains</p>
+                <p class="price">$<span id="price04">30</span></p>
+            </div>
+        </div>
+        
+        <div id="subtotal">
+            <p>Total Price: $<span id="totalprice">0</span></p>
+        </div>
+        
+        <script>
+            /* var subtotal = document.querySelector('#totalprice').innerHTML()
+            {
+                subtotal = parseInt(subtotal);
+                console.log(subtotal);
+            } */
+            var subtotal = 0;
+            
+            document.querySelector('#print01').onclick = function()
+            {
+                var price01 = parseInt(document.querySelector('#price01').innerHTML);
+                subtotal = subtotal + price01;
+                document.querySelector('#totalprice').innerHTML = subtotal;
+            }
+            document.querySelector('#print02').onclick = function()
+            {
+                var price02 = 
+                parseInt(document.querySelector('#price02').innerHTML);
+                //console.log(subtotal)
+                subtotal = subtotal + price02;
+                //console.log(subtotal)
+                document.querySelector('#totalprice').innerHTML = subtotal;
+            }
+            document.querySelector('#print03').onclick = function()
+            {
+                var price03 = 
+                parseInt(document.querySelector('#price03').innerHTML);
+                subtotal = subtotal + price03;
+                document.querySelector('#totalprice').innerHTML = subtotal;
+            }
+            document.querySelector('#print04').onclick = function()
+            {
+                var price04 = parseInt(document.querySelector('#price04').innerHTML);
+                subtotal = subtotal + price04;
+                document.querySelector('#totalprice').innerHTML = subtotal;
+            }
+        </script>
+    </body>
+    
+</html>
